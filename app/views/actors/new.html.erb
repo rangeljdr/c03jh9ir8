@@ -1,0 +1,7 @@
+<h1>Nuevo Actor</h1>
+
+    <%= form_for @actor do |f| %>
+        Name: <%= f.text_field :name %>
+        Bio: <%= f.text_field(:bio) %>
+            <%= submit_tag 'Crear Actor' %>
+    <% end %>
