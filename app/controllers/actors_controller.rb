@@ -10,7 +10,7 @@ class ActorsController < ApplicationController
   def create
     actor = Actor.new(actor_params)
     actor.save
-    redirect_to '/'
+    redirect_to actors_path
   end
 
   private
